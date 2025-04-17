@@ -1,0 +1,122 @@
+body {
+    background-color: aliceblue;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: rgb(5, 83, 152);
+    background-color: aliceblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 100px;
+    font-weight: normal;
+    margin: 0;
+    padding: 10px 0;
+    text-align: left;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    margin: 10px 0;
+    padding: 5px 0;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(2, 51, 94);
+}
+
+h1, h2 {
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    margin: 10px 0;
+    padding: 5px 0;
+    text-align: center;
+    width: 88%;
+    font-weight: lighter;
+    color: rgb(2, 51, 94);
+}
+
+.horizontal-section {
+    width: 20%;
+    height: 100vh;
+    background-color: rgb(5, 83, 152);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.horizontal-section img {
+    max-width: 70%;
+    max-height: 70%;
+    width: auto;
+    height: auto;
+    margin-top: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+body > *:not(.horizontal-section) {
+    margin-left: 60;
+    padding: 10px;
+    text-align: left;
+    width: auto;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 5px 0;
+    text-align: left;
+}
+
+a {
+    color: rgb(2, 51, 94);
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: none;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 20%;
+    width: 50%;
+    padding: 0 10%;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.resume-button {
+    margin-top: 10px; /* Reduce the space between buttons */
+    margin-bottom: 10px; /* Optional: Add consistent spacing below */
+    padding: 10px 20px;
+    background-color: white;
+    color: rgb(5, 83, 152);
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid rgb(5, 83, 152);
+    border-radius: 5px;
+    display: block; /* Ensures buttons stack vertically */
+    width: 80%; /* Optional: Adjust button width */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.resume-button:hover {
+    background-color: rgb(5, 83, 152);
+    color: white;
+}

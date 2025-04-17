@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYU Tableau</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .back-button {
+            background-color: white; /* White background */
+            color: rgb(5, 83, 152); /* BYU blue text */
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: 2px solid rgb(5, 83, 152); /* Add a blue border */
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin: 20px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 1000; /* Ensure the button is above the Tableau graph */
+        }
+        .back-button:hover {
+            background-color: rgb(5, 83, 152); /* Blue background on hover */
+            color: white; /* White text on hover */
+        }
+        .tableauPlaceholder {
+            width: 100vw; /* Full screen width */
+            height: 100vh; /* Full screen height */
+        }
+    </style>
+</head>
+<body>
+    <!-- Back to Home Button -->
+    <a href="index.html" class="back-button">Back to Home</a>
+
+    <!-- Tableau Visualization -->
+    <div class='tableauPlaceholder' id='viz1744754942858' style='position: relative'>
+        <noscript>
+            <a href='#'>
+                <img alt='Timeline' src='https://public.tableau.com/static/images/BY/BYUAlumniintheSuperBowl_16437567503580/Timeline/1_rss.png' style='border: none;' />
+            </a>
+        </noscript>
+        <object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='BYUAlumniintheSuperBowl_16437567503580/Timeline' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image' value='https://public.tableau.com/static/images/BY/BYUAlumniintheSuperBowl_16437567503580/Timeline/1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+        </object>
+    </div>
+    <script type='text/javascript'>
+        var divElement = document.getElementById('viz1744754942858');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.width = '100%'; /* Full screen width */
+        vizElement.style.height = '100vh'; /* Full screen height */
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+</body>
+</html>
